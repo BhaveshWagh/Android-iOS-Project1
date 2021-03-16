@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agecal.OTP">
+    <ContentPage.Content>
+        <StackLayout Padding="25" VerticalOptions="CenterAndExpand">
+            <Label Text="OTP"
+                   FontSize="Large"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" >
+                <Entry x:Name="B1" Margin="5,0,5,0" TextChanged ="B1_TextChanged" Keyboard="Numeric" MaxLength="1" WidthRequest="50"/>
+                <Entry x:Name="B2" Margin="5,0,5,0" TextChanged ="B2_TextChanged" Keyboard="Numeric" MaxLength="1" WidthRequest="50"/>
+                <Entry x:Name="B3" Margin="5,0,5,0" TextChanged ="B3_TextChanged" Keyboard="Numeric" MaxLength="1" WidthRequest="50"/>
+                <Entry x:Name="B4" Margin="5,0,5,0" TextChanged ="B4_TextChanged" Keyboard="Numeric" MaxLength="1" WidthRequest="50"/>
+                <Entry x:Name="B5" Margin="5,0,5,0" Keyboard="Numeric" MaxLength="1" WidthRequest="50"/>
+            </StackLayout>
+
+            <Button x:Name="ValidateButton"
+                    Background="green"
+                    TextColor="White"
+                    Text="validate"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

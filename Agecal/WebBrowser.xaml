@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agecal.WebBrowser">
+    <ContentPage.Content>
+        <StackLayout>
+       
+            <StackLayout Orientation="Horizontal">
+
+                <Entry x:Name="AddressBar" 
+                   HorizontalOptions="FillAndExpand"
+                   TextChanged="AddressBar_TextChanged"/>
+
+                <Button x:Name="goButton" 
+                    Text="Go" 
+                    Clicked="goButton_Clicked"/>
+            
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal">
+
+                    <Button x:Name="BackButton"
+                            HorizontalOptions="FillAndExpand"
+                            Clicked="BackButton_Clicked"
+                            Text="Back"/>
+
+                    <Button x:Name="ForwardButton"
+                            HorizontalOptions="FillAndExpand"
+                            Clicked="ForwardButton_Clicked"
+                            Text="Forward"/>
+            </StackLayout>
+                
+            <WebView x:Name="myBrowser"
+                     HorizontalOptions="FillAndExpand"    
+                     VerticalOptions="FillAndExpand"
+                     Source="https://google.com"/>
+           
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

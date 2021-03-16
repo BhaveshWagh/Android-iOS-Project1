@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="LightGray"
+             x:Class="Agecal.MainPage">
+
+    <StackLayout VerticalOptions="CenterAndExpand"
+                 HorizontalOptions="CenterAndExpand"
+                 Padding="25">
+        
+        <Label Text="Age cal" FontSize="Medium" HorizontalTextAlignment="Center"/>
+
+        <Entry Placeholder="Enter Birth Year in YYYY formate"
+               Keyboard="Numeric"
+               MaxLength="4"
+               x:Name="BYear_Entry"/>
+
+        <Button x:Name="Calculate_Button"
+                Text="Calculate"
+                TextColor="White"
+                TextTransform="None"
+                Clicked="Calculate_Button_Clicked"
+                BackgroundColor="Salmon"/>
+
+        <Label x:Name="Oplabel"
+               FontSize="Large"/>
+
+
+
+
+
+
+    </StackLayout>
+
+</ContentPage>

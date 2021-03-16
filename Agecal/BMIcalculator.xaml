@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="LightSkyBlue" 
+             x:Class="Agecal.BMIcalculator">
+    <ContentPage.Content>
+        <StackLayout Padding="25"  
+                     VerticalOptions="CenterAndExpand"     
+                     HorizontalOptions="CenterAndExpand" >
+            
+            <Label Text="BMIcalculator"
+                   FontSize="Medium"
+                   WidthRequest="350"/>
+
+            <Entry x:Name="kgEntry"
+                   Keyboard="Numeric"
+                   Placeholder="Weight in kg"
+                   TextColor="White"/>
+
+            <Slider Maximum="500"
+                        Minimum="1" 
+                        HorizontalOptions="FillAndExpand"
+                        x:Name="KgSlider"
+                        ValueChanged="KgSlider_ValueChanged"/>
+   
+            <Entry x:Name="CmEntry"
+                   Keyboard="Numeric"
+                   Placeholder="Height in cm"
+                   TextColor="White"/>
+
+            <Slider Maximum="500"
+                        Minimum="1" 
+                        x:Name="CmSlider"
+                        ValueChanged="CmSlider_ValueChanged"/>
+            
+         
+            <Button x:Name="CalculatorBMIButton"
+                    Text="Calculate"
+                    TextColor="White"
+                    BackgroundColor="green"
+                    Clicked="CalculatorBMIButton_Clicked"
+                    TextTransform="None"/>
+             
+            <Label x:Name="BMI_lable"
+                   FontSize="Large"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
